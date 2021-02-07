@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-container"></div>
+      <section class="faq-container">
+        <header>
+          <h1>Faq</h1>
+        </header>
+        <ul class="menu">
+          <li>
+            <input type="radio" name="menuopt" id="drop1" />
+            <label class="opener" for="drop1"
+              >How many team members can I invite?</label
+            >
+            <label class="closer" for="dropclose"
+              >How many team members can I invite?</label
+            >
+            <ul>
+              <li class="faq-answer">
+                <p>
+                  You can invite up to 2 additional users on the Free plan.
+                  There is no limit on team members for the Premium plan.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input type="radio" name="menuopt" id="drop2" />
+            <label class="opener" for="drop2"
+              >What is the maximum file upload size?</label
+            >
+            <label class="closer" for="dropclose"
+              >What is the maximum file upload size?</label
+            >
+            <ul>
+              <li class="faq-answer">
+                <p>
+                  No more than 2GB. All files in your account must fit your
+                  allotted storage space.
+                </p>
+              </li>
+            </ul>
+            <input type="radio" name="menuopt" id="dropclose" />
+          </li>
+          <li>
+            <input type="radio" name="menuopt" id="drop3" />
+            <label class="opener" for="drop3"
+              >How do I reset my password?</label
+            >
+            <label class="closer" for="dropclose"
+              >How do I reset my password?</label
+            >
+            <ul>
+              <li class="faq-answer">
+                <p>
+                  Click “Forgot password” from the login page or “Change
+                  password” from your profile page. A reset link will be emailed
+                  to you.
+                </p>
+              </li>
+            </ul>
+            <input type="radio" name="menuopt" id="dropclose" />
+          </li>
+          <li>
+            <input type="radio" name="menuopt" id="drop4" />
+            <label class="opener" for="drop4">
+              Can I cancel my subscription?</label
+            >
+            <label class="closer" for="dropclose">
+              Can I cancel my subscription?</label
+            >
+            <ul>
+              <li class="faq-answer">
+                <p>
+                  Yes! Send us a message and we’ll process your request no
+                  questions asked.
+                </p>
+              </li>
+            </ul>
+            <input type="radio" name="menuopt" id="dropclose" />
+          </li>
+          <li>
+            <input type="radio" name="menuopt" id="drop5" />
+            <label class="opener" for="drop5"
+              >Do you provide additional support?</label
+            >
+            <label class="closer" for="dropclose"
+              >Do you provide additional support?</label
+            >
+            <ul>
+              <li class="faq-answer">
+                <p>Phone lines are open during normal business hours.</p>
+              </li>
+            </ul>
+            <input type="radio" name="menuopt" id="dropclose" />
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
