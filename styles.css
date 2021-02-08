@@ -1,7 +1,26 @@
-/* Color Variables */
+:root {
+  /* Color Variables */
+  /* ### Primary
+  #### Text */
+  --primaryDarkBlue: hsl(238, 29%, 16%);
+  --activeRed: hsl(14, 88%, 65%);
 
-/* Font Variables */
+  /* #### Gradient */
+  /* Background gradient: */
 
+  --bgViolet: hsl(273, 75%, 66%);
+  --bgBlue: hsl(240, 73%, 65%);
+
+  /* ### Neutral */
+  /* #### Text */
+
+  --secondaryVeryDarkGreyBlue: hsl(237, 12%, 33%);
+  --secondaryDarkGreyBlue: hsl(240, 6%, 50%);
+
+  /* #### Dividers */
+
+  --divLightGreyBlue: hsl(240, 5%, 91%);
+}
 *,
 *::before,
 *::after {
@@ -11,14 +30,40 @@
 }
 html {
   box-sizing: border-box;
-  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+  font-size: 62.5%; /* 10px/16px = 62.5% -> 1rem = 10px */
 }
 
 body {
+  display: flex;
+  place-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.2rem;
+  font-family: 'Kumbh Sans', sans-serif;
+  background: linear-gradient(to top, var(--bgBlue), var(--bgViolet));
+}
+ul {
+  list-style: none;
 }
 .container {
   display: flex;
+  width: 60vw;
+  height: 70vh;
+  background: #fff;
+  border-radius: 2.3rem;
+  align-self: center;
+  overflow: hidden;
 }
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 88vw;
+    height: 75vh;
+    transform: translateY(2rem);
+  }
+}
+
+/* Faq */
 
 .menu ul,
 .menu input,
@@ -29,4 +74,15 @@ body {
 .menu input:checked ~ ul,
 .menu input:checked ~ .closer {
   display: block;
+}
+
+/* Image */
+.img-container {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+.img-container img {
+  width: 35vw;
+  transform: translateX(-5rem);
 }
