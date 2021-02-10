@@ -70,24 +70,26 @@ ul {
 
 /* Faq */
 
+/* Menu */
 .menu ul,
 .menu input,
 .menu .closer,
-.menu input:checked ~ .opener {
+.menu .arr-up,
+.menu input:checked ~ .opener,
+.menu input:checked ~ .arr-down {
   display: none;
 }
 .menu input:checked ~ ul,
-.menu input:checked ~ .closer {
+.menu input:checked ~ .closer,
+.menu input:checked ~ .arr-up {
   display: block;
 }
-.faq-container {
-  display: flex;
-  flex-direction: column;
-  margin: 6.5rem 0 5rem 0;
-  width: 100%;
+.menu .closer {
+  font-weight: 700;
+  color: var(--primaryDarkBlue);
 }
-.faq-container header {
-  font-size: 1.8rem;
+.menu .opener {
+  color: var(--secondaryVeryDarkGreyBlue);
 }
 .menu {
   display: flex;
@@ -97,10 +99,36 @@ ul {
   width: 80%;
   margin-top: 2rem;
 }
-.menu li {
+.menu > li {
+  position: relative;
 }
+.arr-down,
+.arr-up {
+  position: absolute;
+  top: 0;
+  left: 94%;
+}
+.arr-up {
+  transform: rotate(180deg) translateY(2px);
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  margin: 6.5rem 0 5rem 0;
+  width: 100%;
+}
+.faq-container header {
+  font-size: 2rem;
+  color: var(--primaryDarkBlue);
+}
+
 .faq-answer {
   margin: 1rem 0 1rem 0;
+  color: var(--secondaryDarkGreyBlue);
+}
+hr {
+  border: 1px solid var(--divLightGreyBlue);
 }
 
 /* Image */
