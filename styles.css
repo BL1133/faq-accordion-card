@@ -68,20 +68,15 @@ ul {
   }
 }
 
-/* Faq */
-
 /* Menu */
 .menu ul,
 .menu input,
 .menu .closer,
-.menu .arr-up,
-.menu input:checked ~ .opener,
-.menu input:checked ~ .arr-down {
+.menu input:checked ~ .opener {
   display: none;
 }
 .menu input:checked ~ ul,
-.menu input:checked ~ .closer,
-.menu input:checked ~ .arr-up {
+.menu input:checked ~ .closer {
   display: block;
 }
 .menu .closer {
@@ -104,15 +99,21 @@ ul {
 .menu > li {
   position: relative;
 }
-.arr-down,
-.arr-up {
+
+.menu > li label img {
   position: absolute;
   top: 0;
   left: 94%;
 }
-.arr-up {
-  transform: rotate(180deg) translateY(2px);
+.menu > li .closer img {
+  transform: rotate(180deg) translateY(1px);
 }
+.menu label {
+  display: block;
+  width: 100%;
+}
+
+/* FAQ */
 
 .faq-container {
   display: flex;
