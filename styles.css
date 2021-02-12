@@ -60,7 +60,7 @@ ul {
   -webkit-box-shadow: 0px 10px 23px 2px rgba(0, 0, 0, 0.46);
   box-shadow: 0px 18px 33px 1px rgba(0, 0, 0, 0.15);
 }
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1025px) {
   .container {
     width: 88vw;
     height: 69vh;
@@ -108,7 +108,7 @@ ul {
 .menu label {
   width: 100%;
 }
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1025px) {
   .menu {
     width: 100%;
     margin-top: 1rem;
@@ -119,6 +119,25 @@ ul {
   }
   .menu-answer {
     font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 1025px) {
+  .menu {
+    width: 80%;
+    align-self: center;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1025px) {
+  .menu {
+    width: 75%;
+  }
+  .menu .opener,
+  .menu .closer {
+    font-size: 2.2rem;
+  }
+  .menu-answer {
+    font-size: 1.9rem;
+    line-height: 2.4rem;
   }
 }
 
@@ -148,7 +167,7 @@ ul {
 hr {
   border: 1px solid var(--divLightGreyBlue);
 }
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1025px) {
   .faq-container {
     height: 100%;
     width: initial;
@@ -192,7 +211,7 @@ hr {
   left: -17%;
   transform: translate(-50%, -50%);
 }
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1025px) {
   .img-container {
     height: 38%;
   }
@@ -212,5 +231,30 @@ hr {
   .img-pattern {
     top: -8%;
     left: 50%;
+  }
+}
+@media only screen and (min-width: 430px) and (max-width: 1025px) {
+  .img-main {
+    width: 50vw;
+    top: -15%;
+  }
+  .img-pattern {
+    width: 50vw;
+  }
+  .img-superimposed {
+    width: 20vw;
+    left: 30%;
+    top: 0%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1025px) {
+  .img-main {
+    top: -20%;
+  }
+  .img-pattern {
+    top: -25%;
+  }
+  .img-superimposed {
+    top: -1%;
   }
 }
