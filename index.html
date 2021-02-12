@@ -31,125 +31,132 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="img-container">
+    <div class="container container__overflow">
+      <div class="container">
+        <div class="img-container">
+          <img
+            src="./images/illustration-woman-online-desktop.svg"
+            alt=""
+            class="img-main"
+          />
+        </div>
         <img
-          src="./images/illustration-woman-online-desktop.svg"
+          class="img-superimposed"
+          src="./images/illustration-box-desktop.svg"
           alt=""
-          class="img-main"
         />
+        <section class="faq-container">
+          <header>
+            <h1>FAQ</h1>
+          </header>
+          <ul class="menu">
+            <li>
+              <input type="radio" name="menuopt" id="drop1" />
+              <label class="opener" for="drop1"
+                >How many team members can I invite?
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </label>
+              <label class="closer" for="dropclose"
+                >How many team members can I invite?
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </label>
+              <ul>
+                <li class="faq-answer">
+                  <p>
+                    You can invite up to 2 additional users on the Free plan.
+                    There is no limit on team members for the Premium plan.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <hr />
+            <li>
+              <input type="radio" name="menuopt" id="drop2" />
+              <label class="opener" for="drop2"
+                >What is the maximum file upload size?
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </label>
+              <label class="closer" for="dropclose"
+                >What is the maximum file upload size?
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </label>
+              <ul>
+                <li class="faq-answer">
+                  <p>
+                    No more than 2GB. All files in your account must fit your
+                    allotted storage space.
+                  </p>
+                </li>
+              </ul>
+              <input type="radio" name="menuopt" id="dropclose" />
+            </li>
+            <hr />
+            <li>
+              <input type="radio" name="menuopt" id="drop3" />
+              <label class="opener" for="drop3"
+                >How do I reset my password?
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </label>
+              <label class="closer" for="dropclose"
+                >How do I reset my password?
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </label>
+
+              <ul>
+                <li class="faq-answer">
+                  <p>
+                    Click “Forgot password” from the login page or “Change
+                    password” from your profile page. A reset link will be
+                    emailed to you.
+                  </p>
+                </li>
+              </ul>
+              <input type="radio" name="menuopt" id="dropclose" />
+            </li>
+            <hr />
+            <li>
+              <input type="radio" name="menuopt" id="drop4" />
+              <label class="opener" for="drop4">
+                Can I cancel my subscription?
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </label>
+              <label class="closer" for="dropclose">
+                Can I cancel my subscription?
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </label>
+              <ul>
+                <li class="faq-answer">
+                  <p>
+                    Yes! Send us a message and we’ll process your request no
+                    questions asked.
+                  </p>
+                </li>
+              </ul>
+              <input type="radio" name="menuopt" id="dropclose" />
+            </li>
+            <hr />
+            <li>
+              <input type="radio" name="menuopt" id="drop5" />
+              <label class="opener" for="drop5"
+                >Do you provide additional support?
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </label>
+              <label class="closer" for="dropclose"
+                >Do you provide additional support?
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </label>
+
+              <ul>
+                <li class="faq-answer">
+                  <p>Phone lines are open during normal business hours.</p>
+                </li>
+              </ul>
+              <input type="radio" name="menuopt" id="dropclose" />
+            </li>
+            <hr />
+          </ul>
+        </section>
       </div>
-      <section class="faq-container">
-        <header>
-          <h1>FAQ</h1>
-        </header>
-        <ul class="menu">
-          <li>
-            <input type="radio" name="menuopt" id="drop1" />
-            <label class="opener" for="drop1"
-              >How many team members can I invite?
-              <img src="./images/icon-arrow-down.svg" alt="" />
-            </label>
-            <label class="closer" for="dropclose"
-              >How many team members can I invite?
-              <img src="./images/icon-arrow-down.svg" alt="" />
-            </label>
-            <ul>
-              <li class="faq-answer">
-                <p>
-                  You can invite up to 2 additional users on the Free plan.
-                  There is no limit on team members for the Premium plan.
-                </p>
-              </li>
-            </ul>
-          </li>
-          <hr />
-          <li>
-            <input type="radio" name="menuopt" id="drop2" />
-            <label class="opener" for="drop2"
-              >What is the maximum file upload size?
-              <img src="./images/icon-arrow-down.svg" alt="" />
-            </label>
-            <label class="closer" for="dropclose"
-              >What is the maximum file upload size?
-              <img src="./images/icon-arrow-down.svg" alt="" />
-            </label>
-            <ul>
-              <li class="faq-answer">
-                <p>
-                  No more than 2GB. All files in your account must fit your
-                  allotted storage space.
-                </p>
-              </li>
-            </ul>
-            <input type="radio" name="menuopt" id="dropclose" />
-          </li>
-          <hr />
-          <li>
-            <input type="radio" name="menuopt" id="drop3" />
-            <label class="opener" for="drop3"
-              >How do I reset my password?
-              <img src="./images/icon-arrow-down.svg" alt="" />
-            </label>
-            <label class="closer" for="dropclose"
-              >How do I reset my password?
-              <img src="./images/icon-arrow-down.svg" alt="" />
-            </label>
-
-            <ul>
-              <li class="faq-answer">
-                <p>
-                  Click “Forgot password” from the login page or “Change
-                  password” from your profile page. A reset link will be emailed
-                  to you.
-                </p>
-              </li>
-            </ul>
-            <input type="radio" name="menuopt" id="dropclose" />
-          </li>
-          <hr />
-          <li>
-            <input type="radio" name="menuopt" id="drop4" />
-            <label class="opener" for="drop4">
-              Can I cancel my subscription?
-              <img src="./images/icon-arrow-down.svg" alt="" />
-            </label>
-            <label class="closer" for="dropclose">
-              Can I cancel my subscription?
-              <img src="./images/icon-arrow-down.svg" alt="" />
-            </label>
-            <ul>
-              <li class="faq-answer">
-                <p>
-                  Yes! Send us a message and we’ll process your request no
-                  questions asked.
-                </p>
-              </li>
-            </ul>
-            <input type="radio" name="menuopt" id="dropclose" />
-          </li>
-          <hr />
-          <li>
-            <input type="radio" name="menuopt" id="drop5" />
-            <label class="opener" for="drop5"
-              >Do you provide additional support?
-              <img src="./images/icon-arrow-down.svg" alt="" />
-            </label>
-            <label class="closer" for="dropclose"
-              >Do you provide additional support?
-              <img src="./images/icon-arrow-down.svg" alt="" />
-            </label>
-
-            <ul>
-              <li class="faq-answer">
-                <p>Phone lines are open during normal business hours.</p>
-              </li>
-            </ul>
-            <input type="radio" name="menuopt" id="dropclose" />
-          </li>
-          <hr />
-        </ul>
-      </section>
     </div>
 
     <div class="attribution">

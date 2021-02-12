@@ -67,7 +67,7 @@ ul {
     transform: translateY(2rem);
   }
 }
-
+/* --------------------- */
 /* Menu */
 .menu ul,
 .menu input,
@@ -99,7 +99,11 @@ ul {
 .menu > li {
   position: relative;
 }
+.menu label {
+  width: 100%;
+}
 
+/* Arrow Icons */
 .menu > li label img {
   position: absolute;
   top: 0;
@@ -108,11 +112,8 @@ ul {
 .menu > li .closer img {
   transform: rotate(180deg) translateY(1px);
 }
-.menu label {
-  display: block;
-  width: 100%;
-}
 
+/* --------------------- */
 /* FAQ */
 
 .faq-container {
@@ -135,13 +136,29 @@ hr {
   border: 1px solid var(--divLightGreyBlue);
 }
 
+/* --------------------- */
 /* Image */
-.img-container {
-  display: flex;
-  flex-direction: column;
-  place-content: center;
+.container__overflow {
+  position: relative;
+  overflow: visible;
 }
-.img-container img {
+.img-container {
+  width: 100%;
+  position: relative;
+}
+.img-main {
   width: 31vw;
-  transform: translateX(-7rem) scale(1.05);
+  top: 50%;
+  left: 36%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.img-superimposed {
+  width: 14vw;
+  z-index: 1;
+  position: absolute;
+  top: 60%;
+  left: 0%;
+  transform: translate(-50%, -50%);
 }
