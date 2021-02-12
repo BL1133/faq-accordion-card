@@ -58,13 +58,13 @@ ul {
   align-self: center;
   overflow: hidden;
   -webkit-box-shadow: 0px 10px 23px 2px rgba(0, 0, 0, 0.46);
-  box-shadow: 0px 17px 26px 0px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 18px 33px 1px rgba(0, 0, 0, 0.15);
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1030px) {
   .container {
     width: 88vw;
-    height: 75vh;
-    transform: translateY(2rem);
+    height: 69vh;
+    flex-direction: column;
   }
 }
 /* --------------------- */
@@ -79,6 +79,14 @@ ul {
 .menu input:checked ~ .closer {
   display: block;
 }
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 80%;
+  margin-top: 2rem;
+}
 .menu .closer {
   font-weight: 700;
   color: var(--primaryDarkBlue);
@@ -88,19 +96,29 @@ ul {
   color: var(--secondaryVeryDarkGreyBlue);
   font-size: 1.4rem;
 }
-.menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 100%;
-  width: 80%;
-  margin-top: 2rem;
+.menu-answer {
+  margin: 1.5rem 0 1rem 0;
+  color: var(--secondaryDarkGreyBlue);
+  line-height: 1.7rem;
 }
 .menu > li {
   position: relative;
 }
 .menu label {
   width: 100%;
+}
+@media only screen and (max-width: 1030px) {
+  .menu {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .menu .opener,
+  .menu .closer {
+    font-size: 1.33rem;
+  }
+  .menu-answer {
+    font-size: 1.2rem;
+  }
 }
 
 /* Arrow Icons */
@@ -123,17 +141,21 @@ ul {
   width: 100%;
 }
 .faq-container header {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: var(--primaryDarkBlue);
-}
-
-.faq-answer {
-  margin: 1.5rem 0 1rem 0;
-  color: var(--secondaryDarkGreyBlue);
-  line-height: 1.7rem;
 }
 hr {
   border: 1px solid var(--divLightGreyBlue);
+}
+@media only screen and (max-width: 1030px) {
+  .faq-container {
+    height: 100%;
+    width: initial;
+    margin: 0rem 2.2rem 3rem 2.2rem;
+  }
+  .faq-container header {
+    align-self: center;
+  }
 }
 
 /* --------------------- */
@@ -158,8 +180,8 @@ hr {
   width: 13.5vw;
   z-index: 2;
   position: absolute;
-  top: 60%;
-  left: 0%;
+  top: 59%;
+  left: 0.5%;
   transform: translate(-50%, -50%);
 }
 .img-pattern {
@@ -168,4 +190,15 @@ hr {
   top: 36%;
   left: -17%;
   transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 1030px) {
+  .img-container {
+    height: 40%;
+  }
+  .container__overflow {
+    transform: translateY(4rem);
+  }
+  .img-superimposed {
+    top: 0%;
+  }
 }
