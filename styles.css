@@ -147,18 +147,25 @@ hr {
   position: relative;
 }
 .img-main {
-  width: 31vw;
+  width: 33vw;
   top: 50%;
-  left: 36%;
+  left: 35%;
   transform: translate(-50%, -50%);
   position: absolute;
-}
-
-.img-superimposed {
-  width: 14vw;
   z-index: 1;
+}
+.img-superimposed {
+  width: 13.5vw;
+  z-index: 2;
   position: absolute;
   top: 60%;
   left: 0%;
+  transform: translate(-50%, -50%);
+}
+.img-pattern {
+  width: 65vw;
+  position: absolute;
+  top: 36%;
+  left: -17%;
   transform: translate(-50%, -50%);
 }
